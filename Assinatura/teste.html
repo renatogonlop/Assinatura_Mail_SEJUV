@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste</title>
+    <script src="dom-to-image.js"></script>
+</head>
+
+<body>
+    <div id="form">
+        <form>
+
+            <label>Primeiro Nome</label>
+            <input type="text" name="primeironome">
+
+            <label>Ultimo Nome</label>
+            <input type="text" name="ultimonome">
+
+            <label>Report</label>
+            <textarea rows="4" cols="75">
+            </textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <button onclick="shot()">Capture</button>
+
+    <script>
+        function shot() {
+            var elmt = document.getElementById('form')
+            domtoimage.toPng(elmt)
+                .then(function (dataUrl) {
+                    var img = new Image();
+                    img.src = dataUrl;
+                    document.body.appendChild(img);
+                })
+                .catch(function (error) {
+                    console.error('error found', error);
+                });
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
