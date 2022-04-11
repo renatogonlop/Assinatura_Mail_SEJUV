@@ -30,6 +30,33 @@ button{
     width: 250px;
 }
 
+nav{
+    display:flex;
+    justify-content: right;
+    
+}
+
+#btn_nav{
+    border-color: white;
+    border: 2px solid;
+    background-color: transparent;
+    width: 180px;
+    height: 40px;
+    font-size: .8rem;
+    align-self: center;
+    margin-right: 2%;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.btn-outline-light:active , .btn-outline-light:hover{
+    background-color: white !important;
+    color: #00ABA5 !important;
+    border-color: white ;
+}
+
+
+
 .btn-outline-success {
     color: #00ABA5;
     border-color: #00ABA5 !important;
@@ -43,7 +70,7 @@ button{
 }
 
 .btn-outline-success:focus {
-    box-shadow:  0 0 0 0.25rem #00aba565 ;
+    box-shadow:  0 0 0 0.25rem #00aba565;
 }
 
 
@@ -68,12 +95,6 @@ button{
 
 
 
-
-
-
-
-
-
 @media screen and (max-width: 510px) {
     .x_flow{
         overflow-x: scroll;
@@ -89,5 +110,8 @@ button{
     }
     #box_form{
         background-image: linear-gradient(#00ABA5 52%, #f5f5f5 54%);   
+    }
+    #btn_nav{
+        font-size: .5rem;
     }
 }
