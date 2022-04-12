@@ -33,10 +33,9 @@ button{
 nav{
     display:flex;
     justify-content: right;
-    
 }
 
-#btn_nav{
+#btn_nav, #pt1, #pt2{
     border-color: white;
     border: 2px solid;
     background-color: transparent;
@@ -55,8 +54,6 @@ nav{
     border-color: white ;
 }
 
-
-
 .btn-outline-success {
     color: #00ABA5;
     border-color: #00ABA5 !important;
@@ -73,7 +70,6 @@ nav{
     box-shadow:  0 0 0 0.25rem #00aba565;
 }
 
-
 .input_copy{
     width: 280px;
     height: auto;
@@ -89,6 +85,23 @@ nav{
 #cargo_copy , #fone_copy{
     text-transform: none;
     font-size: .9rem;
+}
+
+#modal_back{
+    background-image:url("/Img/pmf_branco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    background-color: #00ABA5;
+}
+
+#modal_box_flex_button{
+    
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 90%;
+    z-index: 1;
 }
 
 
